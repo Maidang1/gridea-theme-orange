@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <%- include('./includes/head', { siteTitle: themeConfig.siteName }) %>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-content">
+        <%- include('./includes/header') %>
+        <%- include('./includes/footer') %>
+      </div>
+      <div class="main-content">
+        <div class="right-content">
+          <%- include('./includes/post-list') %>
+          <%- include('./includes/pagination') %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+.site-header {
+  padding: 48px 0;
+  text-align: center;
+
+  .site-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .site-description {
+    font-size: 16px;
+    padding: 24px;
+    color: #333;
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    a.menu {
+      font-size: 16px;
+      padding: 8px 16px;
+      flex-shrink: 0;
+      font-weight: normal;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    
+    a.menu:hover {
+      background-color: rgb(214,214,216);
+    }
+  }
+
+  .avatar {
+    margin-bottom: 24px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+  }
+
+  .social-container {
+    padding: 16px;
+    font-size: 18px;
+    a {
+      margin: 4 8px;
+      color: #333;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 24px 0 0;
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
