@@ -56,6 +56,8 @@ body, div, a, p, ul, li, ol, h1, h2, h3, h4, h5, h6, table, tr, td {
     color:#333;
   }
   .main-content {
+    width: 100%;
+    overflow: hidden;
     padding-left: 340px;
     padding-right: 30px;
     display: flex;
@@ -65,8 +67,95 @@ body, div, a, p, ul, li, ol, h1, h2, h3, h4, h5, h6, table, tr, td {
     background-color: #fff
   }
 }
+@media only screen and (max-width: 830px) {
+  .main {
+    .left-content {
+      left: -300px;
+      transition: all .3s;
+    }
+    .main-content {
+      padding-left: 30px;
+      transition: all .3s;
+    }
+  }
+}
 
+@media only screen and (min-width: 830px) {
+  .main {
+    .left-content {
+      left: 0 !important;
+      transition: all .3s;
+      .icon {
+        display: none;
+      }
+    }
+    .main-content {
+      padding-left: 340px;
+      transition: all .3s;
+      .right-content {
+        .post {
+          .left {
+            .post-abstract {
+              line-height: 16px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
+            }
+            .post-info {
+              margin-top: 6px;
+              margin-bottom: -10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main {
+    .left-content {
+      left: -300px;
+      transition: all .3s;
+    }
+    .main-content {
+      padding: 10px;
+      transition: all .3s;
+      .right-content {
+        .post {
+          .left {
+            width: 100%;
+            .post-title {
+              text-align: center;
+            }
+            .post-abstract {
+              line-height: 16px;
+              text-align: center;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
+            }
+            .post-info {
+              text-align: center;
+              margin-top: 6px;
+              margin-bottom: -10px;
+            }
+          }
+          .right {
+            display: none;
+            .post-feature-image {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 
+}
 
 @import "./components/header.less";
 @import "./components/home.less";
