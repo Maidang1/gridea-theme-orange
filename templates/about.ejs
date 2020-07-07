@@ -1,12 +1,23 @@
 <html>
-  <header>
+  <head>
     <%- include('./includes/head', { siteTitle: themeConfig.siteName }) %>
-  </header>
- <body>
-  <%- include('./includes/header') %>
-   <div class="about-page">
-    前端菜鸡哈哈哈
-   </div>
- </body>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-content">
+        <%- include('./includes/header') %>
+        <%- include('./includes/footer') %>
+      </div>
+      <div class="main-content">
+        <div class="right-content">
+         <div class="myinfo">
+           <p>前端菜鸡😜</p>
+           <p>目前在大二</p>
+           <p>交流邮箱497350746@qq.com</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
+<script src="./../media/scripts/button.js"></script>
