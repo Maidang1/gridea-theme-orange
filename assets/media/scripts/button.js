@@ -8,9 +8,6 @@ button.addEventListener('click', () => {
     leftContent.style.left = '0px';
     main.style.overflow="hidden";
     rigtContent.style.marginLeft="300px";
-    // console.log(rigtContent);
-    // rigtContent.style.position = 'absoulte';
-    // rigtContent.style.left = '300px';
     currentState = 'show';
   } else {
     leftContent.style.left = '-300px';

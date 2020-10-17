@@ -3,12 +3,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title><%= siteTitle %></title>
 <link rel="shortcut icon" href="<%= themeConfig.domain %>/favicon.ico?v=<%= site.utils.now %>">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link rel="stylesheet" href="<%= themeConfig.domain %>/styles/main.css">
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/atom-one-light.css" />
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github.css" /> -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/monokai-sublime.css" /> -->
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+<!-- <script src="http://www.lmlblog.com/winter/templets/xq/js/snowy.js"></script> -->
+<!-- <script src="http://www.lmlblog.com/blog/12/js/Snow.js"></script> -->
 <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+<style type="text/css">
+  .snow-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;}
+  </style>
+
 <!-- DEMO JS -->
 <script src="media/scripts/index.js"></script>
 
@@ -22,3 +32,4 @@
   gtag('config', '<%= site.customConfig.ga %>');
 </script>
 <% } %>
+
